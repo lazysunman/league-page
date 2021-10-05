@@ -5,8 +5,8 @@ import { dynasty } from './utils/helper';
     const today = new Date();
     const resources = [
         {
-            name: "FTN Fantasy",
-            url: "https://www.ftnfantasy.com/nfl",
+            name: "Fantasy Sports - Google Sheet",
+            url: "https://docs.google.com/spreadsheets/d/1a3o5d_32FJw1FPIy5TJD4FnxmHcRcwXd5O2131C_ang/edit?usp=sharing",
             icon: "insights",
             premium: true,
             separator: true,
