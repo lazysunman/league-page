@@ -289,6 +289,7 @@
     <ul>
         <li>1st place: {dues * 10}$</li>
         <li>2nd place: {dues * 2}$</li>
+	<li>Last Place: Pays for shipping and update of trophy</li>
     </ul>
    
     
