@@ -19,8 +19,8 @@ import { dynasty } from './utils/helper';
             separator: true,
         },
         {
-            name: "FantasyPros Dynasty Trade Value Chart",
-            url: `https://www.fantasypros.com/${today.getFullYear()}/${today.getMonth() + 1}/fantasy-football-rankings-dynasty-trade-value-chart-${today.toLocaleString('default', { month: 'long' }).toLowerCase()}-${today.getFullYear()}-update/`,
+            name: "FantasyPros Dynasty Rankings",
+            url: "https://www.fantasypros.com/nfl/rankings/dynasty-overall.php",
             icon: "assessment",
             premium: false,
             separator: true,
