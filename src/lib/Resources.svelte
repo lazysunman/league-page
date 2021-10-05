@@ -8,7 +8,7 @@ import { dynasty } from './utils/helper';
             name: "Fantasy Sports - Google Sheet",
             url: "https://docs.google.com/spreadsheets/d/1a3o5d_32FJw1FPIy5TJD4FnxmHcRcwXd5O2131C_ang/edit?usp=sharing",
             icon: "insights",
-            premium: true,
+            premium: false,
             separator: true,
         },
         {
