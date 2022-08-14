@@ -2,6 +2,112 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.4] - 2022-07-09
+
+### Fixed
+
+- NBC Sports Edge changed it's API format which introduced a bug that broke the Resources page [(issue #129)](https://github.com/nmelhado/league-page/issues/129)
+
+## [1.3.3] - 2022-05-29
+
+### Fixed
+
+- Empty points were causing a bug in the rankings page. Also, the standings page is throwing an undefined in the preseason. [issue #119](https://github.com/nmelhado/league-page/issues/119)
+
+## [1.3.2] - 2022-05-20
+
+### Fixed
+
+- When clicking on a manager from the managers page, the manager indefinitely loads. [issue #117](https://github.com/nmelhado/league-page/issues/117)
+    - RC: [PR #114 Adds playoff records and rankings to the records page](https://github.com/nmelhado/league-page/pull/114)
+
+## [1.3.1] - 2022-04-28
+
+### Fixed
+
+- Scroll to was not functioning properly on the constitution page, reported in [issue #109](https://github.com/nmelhado/league-page/issues/109)
+    - Added an additional offset to counteract the current scroll position
+
+## [1.3.0] - 2022-04-27
+
+### Added
+
+- Playoff records and rankings [feature suggestion #80](https://github.com/nmelhado/league-page/issues/80)
+    - Only looks at playoff bracket, not toilet bowl
+    - Big thank you to [OldNewsBlues](https://github.com/OldNewsBlues) for the suggestion and investigation
+
+### Fixed
+
+- FTN News changed it's format and broke the news page, the change has been addressed and the news feed is working as expected
+- Bug in blog posts, better error handling to catch issues
+
+### Changed
+
+- Refactored a significant amount of the record logic to make it easier to follow/maintain/upgrade
+
+### Removed
+
+- Removed the `_helper/vite-workaround.js` directory, as it is no longer needed with the current version of Svelte Material UI
+
+## [1.2.17] - 2022-04-13
+
+### Fixed
+
+- Brackets now account for two week per round leagues [issue #97](https://github.com/nmelhado/league-page/issues/97)
+
+## [1.2.16] - 2022-01-06
+
+### Fixed
+
+- Bug that would freeze pages if an incomplete draft blog post exists
+
+## [1.2.15] - 2022-01-06
+
+### Changed
+
+- Upgraded [SMUI](https://sveltematerialui.com/) version from 4 to 6
+    - This gives better compatibility with windows deployments and improves some functionality
+    - Removes the need for the VITE workaround script
+    - Adds TS compatibility for those interested
+
+## [1.2.14] - 2021-01-05
+
+### Added
+
+- Big thank you to [OldNewsBlues](https://github.com/OldNewsBlues) for implementing this
+    - Added `Single Week Scoring Lows` and `Season-long Scoring Lows`
+    - Cleaned up records interface
+
+### Changed
+
+- Season long record tables are now sorted by PPG (to offset the expanded NFL seasons and more accurately capture the rankings)
+
+## [1.2.13] - 2022-01-05
+
+### Fixed
+
+- Trophies page bug reported in [issue #95](https://github.com/nmelhado/league-page/issues/95)
+
+## [1.2.12] - 2022-01-05
+
+### Fixed
+
+- Minor bug fixes league in pre-season
+
+## [1.2.11] - 2021-01-03
+
+### Added
+
+- PPG Records [#92](https://github.com/nmelhado/league-page/issues/92)
+    - Big thank you to [OldNewsBlues](https://github.com/OldNewsBlues) for implementing this
+
+## [1.2.10] - 2022-01-03
+
+### Fixed
+
+- Bug that affects playoff matchup and standings 
+    - Reported in issue [#98](https://github.com/nmelhado/league-page/issues/98)
+
 ## [1.2.7] - 2021-10-20
 
 ### Fixed
